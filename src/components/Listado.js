@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import { useEffect } from "react";
 
 const Listado = () => {
@@ -13,7 +13,17 @@ const Listado = () => {
     }, [])
 
     return (
-        <div>wola</div>
+        <div className="row">
+            <div className="col-3 mt-5">
+                <div className="card">
+                    <img src="..." className="cadr-img-top"></img>
+                    <div className="card-body"></div>
+                    <div className="card-title">titulo peli</div>
+                    <div className="card-text">sipnopsis sipnopsis sipnopsis sipnopsis sipnopsis sipnopsis sipnopsis sipnopsis </div>
+                    <Link to="/" className="btn btn-primary"> a la peli</Link>
+                </div>
+            </div>
+        </div>
     );
 };
 

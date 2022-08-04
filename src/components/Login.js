@@ -41,7 +41,7 @@ const Login = () => {
                     <span>password:</span>
                     <input name="password" type="password" />
                 </label>
-                <button type="submit">ingresar</button>
+                <button type="submit" className="btn btn-primary">ingresar</button>
             </form>
         </div>
 
