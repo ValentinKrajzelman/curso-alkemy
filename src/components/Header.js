@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 
+import BarraBusqueda from "./BarraBusqueda.js";
+
 const Header = () => {
     return (
         <div className="navbar navbar-expand-lg navbar-light bg-light">
@@ -13,6 +15,8 @@ const Header = () => {
                 <li className="me-5">
                     <Link to="/contacto">contacto</Link>
                 </li>
+
+                <BarraBusqueda />
             </ul>
         </div>
     );

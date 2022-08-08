@@ -7,10 +7,11 @@ import Listado from "./components/Listado.js";
 import Header from "./components/Header.js";
 import Footer from "./components/Footer.js";
 import Pelicula from "./components/Pelicula.js";
+import Busqueda from "./components/Busqueda.js";
 
 
 function App() {
-  swal('wola')
+  // swal('wola')
 
   return (
     <BrowserRouter>
@@ -22,6 +23,7 @@ function App() {
             <Route path="/" element={<Login />} />
             <Route path="/listado" element={<Listado />} />
             <Route path="/pelicula/*" element={<Pelicula />} />
+            <Route path="/busqueda/*" element={<Busqueda />} />
           </Routes>
         </div>
         <Footer />
