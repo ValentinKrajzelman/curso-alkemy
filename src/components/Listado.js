@@ -2,12 +2,12 @@ import { useNavigate, Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import axios from "axios";
 
-const Listado = () => {
+const Listado = (props) => {
 
     const [pelis, setPelis] = useState([]);
 
     const navigate = useNavigate();
-
+    console.log(props)
     useEffect(() => {
         const token = localStorage.getItem('token');
         if (token === null) {

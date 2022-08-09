@@ -13,6 +13,10 @@ import Busqueda from "./components/Busqueda.js";
 function App() {
   // swal('wola')
 
+  const funcion = () => {
+    console.log("cosas");
+  }
+
   return (
     <BrowserRouter>
       <div>
@@ -21,7 +25,7 @@ function App() {
         <div className="container mt-3">
           <Routes>
             <Route path="/" element={<Login />} />
-            <Route path="/listado" element={<Listado />} />
+            <Route path="/listado" render={(props) => <Listado funcion={funcion}  {...props} />} />
             <Route path="/pelicula/*" element={<Pelicula />} />
             <Route path="/busqueda/*" element={<Busqueda />} />
           </Routes>
